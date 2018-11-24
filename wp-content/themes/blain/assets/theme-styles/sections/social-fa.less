@@ -1,0 +1,48 @@
+.social-wrapper{
+  text-align: center;
+  padding: 30px 20px;
+  background: lighten(@content,50%);
+  z-index: 9;
+  &:before{
+	  width: 100%;
+	  content: "";
+	  position: absolute;
+	  left: 0;
+	  bottom: 100%;
+	  border-top: solid 50px transparent;
+	  border-left: solid 50vw lighten(@content,50%);
+	  border-right: solid 50vw lighten(@content,50%);
+	  background: transparent;
+	  z-index: 9;
+  }
+  &:after {
+	    width: 100%;
+	    content: "";
+	    background: transparent;
+	    position: absolute;
+	    left: 0px;
+	    top: 100%;
+	    border-bottom: solid 50px transparent;
+	    border-left: solid 50vw lighten(@content,50%);
+	    border-right: solid 50vw lighten(@content,50%);
+	    z-index: 9;
+  }
+  .social-inner{
+    position: relative;
+    a{
+      padding: 15px !important;
+      font-size: 18px !important;
+      //color: @onaccent;
+      &:before{
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background:@accent !important;
+      }
+    }
+  }
+}

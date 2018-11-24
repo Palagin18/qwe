@@ -1,0 +1,124 @@
+#showcase-z {
+  position: relative;
+  background: lighten(@content,45%);
+  z-index: 8;
+  padding-bottom: 50px;
+  &:after{
+	  width: 100%;
+	  content: "";
+	  position: absolute;
+	  left: 0;
+	  top: 100%;
+	  border-top: solid 50px lighten(@content,45%);
+	  border-left: solid 50vw transparent;
+	  border-right: solid 50vw transparent;
+	  background: transparent;
+	  z-index: 8;
+  }
+  #curve:after {
+	  border-top-color: lighten(@accent, 15%);
+  }
+  .showcase-wrapper{
+    overflow: auto;
+    box-shadow: 0px 0px 50px rgba(0,0,0,.3);
+  }
+  .hvr-rectangle-out{
+    &:before{
+      background-color: lighten(@accent, 10%);
+    }
+  }
+  .showcase-item-wrapper-h {
+	  overflow: auto;
+  }
+  .sec-right {
+    .hvr-rectangle-out {
+      &:before {
+        background-color: lighten(#0f2331, 20%);
+      }
+    }
+  }
+  .sec-left,.sec-right{
+    padding: 0px;
+  }
+  .showcase-item2_img {
+    float: right !important;
+  }
+  
+  .showcase-item4_img {
+	height: 488px;
+	background-position: center;  
+  }
+  
+  .showcase-item1_img,.showcase-item2_img,.showcase-item3_img,.showcase-item4_img{
+    background-size: cover;
+    padding: 0;
+  }
+  
+  .showcase-item1_img,.showcase-item2_img,.showcase-item3_img {
+	  height: 244px;
+  }
+  
+  @media screen and (max-width: 991px ) and (min-width: 768px) {
+	  .showcase-item4_img {
+		  height: 244px;
+		  float: right;
+	  }
+  }
+  
+  .showcase-item1, .showcase-item2, .showcase-item3 {
+    background-color: #0F2331;
+    min-height: 244px;
+    padding: 0px;
+    text-align: center;
+    .showcase-caption{
+      transform: translateY(30px);
+      .showcase-title {
+        font-weight: bold;
+        color: white;
+        font-size: 40px;
+      }
+      .showcase-desc {
+        color: #ddd;
+        margin-top: 15px;
+        padding: 0 5%;
+        .body-font;
+        font-size: 15px;
+        font-style: italic;
+        line-height: 1.8em;
+      }
+    }
+  }
+  //4
+  .showcase-item4 {
+    background-color: #fff;
+    min-height: 244px;
+    padding: 0px;
+    text-align: center;
+    .showcase-caption{
+      transform: translateY(40px);
+      .showcase-title {
+        font-weight: bold;
+        color: #0f2331;
+        font-size: 40px;
+      }
+      .showcase-desc {
+        color: #ccc;
+        margin-top: 15px;
+        padding: 0 5%;
+        .body-font;
+        font-size: 15px;
+        font-style: italic;
+        line-height: 1.8em;
+        text-shadow: 0px 1px 0px rgba(0,0,0,.3);
+      }
+    }
+
+    &:hover{
+      .showcase-title {
+        color: @onaccent;
+      }
+
+    }
+  }
+
+}

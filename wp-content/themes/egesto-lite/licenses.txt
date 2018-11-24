@@ -1,0 +1,19 @@
+Image used in the screen shot is Public domain, found here
+https://pixabay.com/en/jogging-run-sport-jog-sporty-race-2343558/
+
+
+-Genericons Font
+--By Automattic http://genericons.com/
+--Licensed under GPL
+
+-CSS3 Animate It
+--By Jack McCourt https://github.com/Jack-McCourt/css3-animate-it
+—-Licensed under the MIT license
+
+-Reaktion Menu
+--By Ryan Brown https://github.com/ryantbrown/reaktion.js
+—-Licensed under the MIT license
+
+-Superfish Menu
+--By Joel Birch https://superfish.joelbirch.co/
+—-Dual Licensed under MIT & GPL licenses
